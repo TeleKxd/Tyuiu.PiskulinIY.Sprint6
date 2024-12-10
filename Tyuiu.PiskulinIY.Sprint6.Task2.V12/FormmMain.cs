@@ -42,7 +42,7 @@ namespace Tyuiu.PiskulinIY.Sprint6.Task2.V12
                 {
                     this.dataGridViewRows.Rows.Add(Convert.ToString(startstep), Convert.ToString(valueArray[i]));
 
-                    this.chartFunction.Series[0].Points.AddXY(startstep,valueArray[i]);
+                    this.chartFunction.Series[0].Points.AddXY(startstep, valueArray[i]);
 
                     startstep++;
 
@@ -51,10 +51,15 @@ namespace Tyuiu.PiskulinIY.Sprint6.Task2.V12
 
 
             }
-            catch 
+            catch
             {
                 MessageBox.Show("Ошибка");
             }
+        }
+
+        private void chartFunction_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
