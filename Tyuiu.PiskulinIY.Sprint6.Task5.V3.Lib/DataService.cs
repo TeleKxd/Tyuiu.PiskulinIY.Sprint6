@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Linq;
+using System.IO;
 using tyuiu.cources.programming.interfaces.Sprint6;
 namespace Tyuiu.PiskulinIY.Sprint6.Task5.V3.Lib
 {
@@ -30,7 +31,7 @@ namespace Tyuiu.PiskulinIY.Sprint6.Task5.V3.Lib
 
             }
 
-            numsArray = numsArray.Where(val => val > 0 || val <= 0).ToArray();
+            numsArray = numsArray.Where(var => var % 1 != 0).ToArray();
 
             return numsArray;
 
