@@ -16,7 +16,7 @@ namespace Tyuiu.PiskulinIY.Sprint6.Task6.V26.Lib
                 {
                     var temp = line.Split(' ');
 
-                    resStr += temp[^1] + "";
+                    resStr += temp[^1] + " ";
                 }
                 return resStr;
 
